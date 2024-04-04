@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center items within the flex container */
+    background-color: #fafafa; /* Background color of the bar */
+    border: 0.25px solid #7a7a7a; /* Border around the bar */
+    padding: 0.1px; /* Adjust padding as needed */
+    height: 15%;
+  }
+
+  .logo-link {
+    line-height: 0; /* Remove default line height */
+  }
+
+  /* Adjust styling for the logo */
+  .logo {
+    height: 100px; /* Set the desired height */
+    width: auto; /* Allow the width to adjust automatically to maintain aspect ratio */
+    margin-right: 10px; /* Add margin to create space between logo and other content */
+    margin-left: 120px;
+  }
+
+  .buttons {
+    margin-left: auto; /* Push buttons to the right */
+    margin-right: 150px;
+  }
+  
+  .button {
+    background-color: #ece8e8;
+    color: #000000;
+    font-size: 25px;
+    margin-left: 75px; /* Add margin between buttons */
+  }
+  
+  /* Ensure TopBar is positioned at the top of the page */
+  header.top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
